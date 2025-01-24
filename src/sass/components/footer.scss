@@ -90,6 +90,22 @@
                         }
                     }
                 }
+
+                .icon{
+                    ul{
+                        @include flex(null, center , null, 0.5rem);
+                        cursor: pointer;
+                        
+                        li{
+                            transition: 250ms ease-in-out;
+                            &:hover{
+                                svg{
+                                    fill: #7237BD;
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
             .left{
@@ -97,6 +113,7 @@
                 @include media("<tablet"){
                     flex-direction: column;
                     gap: 0.5rem;
+                    
                 }
             }
 

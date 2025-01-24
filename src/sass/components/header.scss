@@ -62,7 +62,7 @@
                     flex-direction: column;
                     justify-content: center;
                     height: 100%;
-                    gap: 1.8rem;
+                    gap: 2rem;
                 }
                 li{
                     a{
@@ -72,11 +72,11 @@
                         text-decoration: none;
                         position: relative;
                         @include media("<tablet"){
-                           font-size: 23px;
+                           font-size: 19px;
                             
                         }
                         @include media("<desktop-small"){
-                            font-size: 14px;
+                            font-size: 18px;
                              
                          }
                         &::after{

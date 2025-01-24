@@ -1,3 +1,5 @@
+import { FacebookLogo, LinkedinLogo, XLogo } from "@phosphor-icons/react"
+import { InstagramLogo } from "@phosphor-icons/react/dist/ssr"
 
 export function Footer () {
     const date = new Date().getFullYear()
@@ -61,7 +63,7 @@ export function Footer () {
                 <div className="btn">
                     {/* <button>Stay in Touch</button> */}
                 </div>
-                <div className="txt">
+                {/* <div className="txt">
                 <div className="loc">
                      <h3>+1 333 209840</h3>
                      <h3>info@ultimate.com</h3>
@@ -73,10 +75,15 @@ export function Footer () {
                   </ul>
                 </div>
                 
-                </div>
-                {/* <div className="icon">
-                    
                 </div> */}
+                <div className="icon">
+                    <ul>
+                        <li><XLogo size={26} weight="fill" /></li>
+                        <li><LinkedinLogo size={26} weight="fill" /></li>
+                        <li><FacebookLogo size={26} weight="fill" /></li>
+                        <li><InstagramLogo size={26} weight="fill" /></li>
+                    </ul>
+                </div>
               </div>
                 </div>
                 <div className="right">
