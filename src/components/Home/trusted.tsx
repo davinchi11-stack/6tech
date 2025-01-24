@@ -16,17 +16,17 @@ export function Trusted () {
                     </div>
                     <div className="icon">
                        <div className="one">
-                       <div className="card">
+                       <div data-animation="scale" className="card">
                             <div className="logo">
                                 <img src="https://6tech.media/wp-content/uploads/2024/10/Logo-Auzora.png" alt="" />
                             </div>
                         </div>
-                        <div className="card">
+                        <div data-animation="scale" className="card">
                             <div className="logo">
                                 <img src="https://6tech.media/wp-content/uploads/2024/10/logo_astronefty.png" alt="" />
                             </div>
                         </div>
-                        <div className="card">
+                        <div data-animation="scale" className="card">
                             <div className="logo">
                                 <img src="https://6tech.media/wp-content/uploads/2024/10/logo_amerta_w.png" alt="" />
                             </div>
@@ -34,17 +34,17 @@ export function Trusted () {
                        </div>
 
                        <div className="one">
-                       <div className="card">
+                       <div data-animation="scale" className="card">
                             <div className="logo">
                                 <img src="https://6tech.media/wp-content/uploads/2024/10/logo_autorent_w.png" alt="" />
                             </div>
                         </div>
-                        <div className="card">
+                        <div data-animation="scale" className="card">
                             <div className="logo">
                                 <img src="https://6tech.media/wp-content/uploads/2024/10/Logo_aventoura_w.png" alt="" />
                             </div>
                         </div>
-                        <div className="card">
+                        <div  data-animation="scale" className="card">
                             <div className="logo">
                                 <img src="https://6tech.media/wp-content/uploads/2024/10/Logo-Byta.png" alt="" />
                             </div>
@@ -52,17 +52,17 @@ export function Trusted () {
                        </div>
 
                        <div className="one">
-                       <div className="card">
+                       <div data-animation="scale" className="card">
                             <div className="logo">
                                 <img src="https://6tech.media/wp-content/uploads/2024/10/logo-bikepro_.png" alt="" />
                             </div>
                         </div>
-                        <div className="card">
+                        <div data-animation="scale" className="card">
                             <div className="logo">
                                 <img src="https://6tech.media/wp-content/uploads/2024/10/Logo_buzzkit_w.png" alt="" />
                             </div>
                         </div>
-                        <div className="card">
+                        <div data-animation="scale" className="card">
                             <div className="logo">
                                 <img src="https://6tech.media/wp-content/uploads/2024/10/logo_centrix.png" alt="" />
                             </div>

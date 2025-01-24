@@ -28,7 +28,7 @@ export function Footer () {
                 
                 </div>
               </div>
-                <div className="grp-one">
+                {/* <div className="grp-one">
                 <div className="btn">
                     <button className="vidibile"></button>
                 </div>
@@ -43,7 +43,7 @@ export function Footer () {
                     <li>Tech</li>
                    </ul>
                 </div>
-                </div>
+                </div> */}
                 {/* <div className="grp-one">
                 <div className="btn">
                     <button className="vidibile"></button>
@@ -55,6 +55,29 @@ export function Footer () {
                  </ul>
                 </div>
                 </div> */}
+                </div>
+                <div className="right">
+                <div className="grp-one">
+                <div className="btn">
+                    {/* <button>Stay in Touch</button> */}
+                </div>
+                <div className="txt">
+                <div className="loc">
+                     <h3>+1 333 209840</h3>
+                     <h3>info@ultimate.com</h3>
+                     <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                
+                </div>
+                {/* <div className="icon">
+                    
+                </div> */}
+              </div>
                 </div>
                 <div className="right">
                 <div className="grp-one">

@@ -7,15 +7,28 @@ export function Header () {
 
     useEffect(() => {
 
+
+
         if (isOpen) {
             document.querySelector("body")?.classList.add("scroll-lock");
         }else{
             document.querySelector("body")?.classList.remove("scroll-lock")
         }
 
+        
+        const list = document.querySelectorAll(".header-main .nav-list ul li ")
+        
+        list.forEach((li) => {
+            li.addEventListener("click" , () => {
+                setOpen(!open)
+            }) 
+        })
+        
+
         return () => {
             document.querySelector("body")?.classList.remove("scroll-lock")
         }
+
 
     }, [isOpen])
 

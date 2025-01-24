@@ -52,7 +52,8 @@ export function Tech () {
                     <ShoppingCart size={32} weight="fill" />
                     </div>
                     <div className="txt">
-                         <h3 data-animation="header">E-commerceDevelopment <br /> & Managemen</h3>
+                         <h3 data-animation="header">E-commerce <br />Development</h3>
+                         <h3 data-animation="header">& Management</h3>
                          <p data-animation="para"> Optimize and grow your online store
                          seamlessly.
                       </p>

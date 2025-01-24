@@ -124,6 +124,9 @@
     
             .right{
                 width: 40%;
+                @include media("<tablet"){
+                    width: 100%;
+                 }
                 @include flex_col(3rem);
                 
                 .card{
@@ -160,10 +163,14 @@
                     .txt{
                         @include flex_col(1rem);
                         color: #fff;
+                        // background: red;
                         h3{
                           font-size: 1.7rem;
+                        //   line-height: 2rem;
                           @include media("<phone-medium"){
-                            width: 90%;
+                            // br{
+                            //     display: none;
+                            // }
                             
                           }
                           
