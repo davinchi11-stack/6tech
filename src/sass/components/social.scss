@@ -1,0 +1,155 @@
+
+.social{
+
+    
+.intro{
+    // padding: 2rem 0;
+    text-align: center;
+     width: 100%;
+
+     .txt{
+        @include flex_col(3rem);
+        h1{
+            width: 60%;
+            margin: 0 auto;
+            font-size: fluid(37, 72);
+             line-height: fluid(44, 78);
+             @include media("<tablet"){
+                width: 90%;
+             }
+        }
+
+        p{
+            width: 50%;
+            margin: 0 auto;
+            font-size: fluid(16, 18);
+            line-height: fluid(22, 24);
+            @include media("<tablet"){
+                width: 70%;
+             }
+        }
+     }
+}  
+
+.intro-card{
+    background-color: #fff;
+    color: black;
+    padding: 5rem 0;
+    color: $bg_main;
+    .main{
+        @include flex(space-between , null, null, 2rem);
+        @include media("<tablet"){
+            flex-direction: column;
+            gap: 4rem;
+         }
+        .left{
+            width: 50%;
+            h2{
+                font-size: fluid(37, 72);
+                line-height: fluid(54, 78);
+                // font-weight: 600;
+                color: $bg_main;
+            }
+            @include media("<tablet"){
+                width: 100%;
+             }
+        }
+
+        .right{
+            @include flex_col(3rem);
+            
+            .card{
+                @include flex_col(1.3rem);
+            
+                // padding: 20px;
+                border-radius: 10px;
+                &:nth-child(2){
+                   .icon{
+                    background: $global-color-purple;
+                   }
+                }
+
+                &:nth-child(3){
+                    .icon{
+                     background: $global-color-639e8dd;
+                    }
+                 }
+
+                .icon{
+                    background-color:  #DC143C ;
+                    &:nth-child(2){
+                        background: $global-color-639e8dd;
+                    }
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 6px;
+                    padding: 2;
+                    @include flex(center, center, null, null);
+                    svg{
+                        fill: white;
+                    }
+                }
+                .txt{
+                    @include flex_col(1rem);
+                    h3{
+                      font-size: 1.7rem;
+                      
+                    }
+                    p{
+                        font-size: 1rem;
+                        line-height: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pricing {
+    
+    .pricing_main{
+        .btn{
+            button{
+                &.active{
+                    background-color: #DC143C ;
+                    color: #fff;
+                   
+                }
+            }
+        }
+
+        // .price{
+           
+        //     .pricing-main{
+               
+        //     &.annually{
+                
+        //     // .pricing-card{
+        //     //     // background: linear-gradient(120deg, #FFDAB9, #B0E0E6 50%, #F4C6C1);
+
+
+        //     // &:last-child{
+        //     //     // background: linear-gradient(135deg, #DAA520, #40E0D0 50%, #8E4585);
+
+
+        //     // }
+                
+        //     // }
+
+        //   }
+               
+        //        .pricing-card{
+        //         // background: linear-gradient(140deg, #FF7F50, #FFD700 50%, #00CED1);
+        //         // background: linear-gradient(150deg, #E6E6FA, #FF6F61 50%, #87CEEB);
+        //           &:last-child{
+        //             // background: linear-gradient(160deg, #FFFACD, #00C8A0 50%, #C5B9D2);
+
+        //           }
+        //         }
+        //     }
+            
+        //  }
+    }
+
+   }
+}  

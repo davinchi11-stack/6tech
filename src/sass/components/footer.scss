@@ -1,0 +1,143 @@
+.footer{
+    // background: red;
+    color: white;
+
+    &_lead{
+        padding: 5rem 0;
+        .text{
+            text-align: center;
+            @include flex_col(3rem);
+
+            h1{
+                font-weight: 600;
+                font-size: fluid(40 , 112);
+            }
+
+            button{
+                width: 200px;
+                margin: 0 auto;
+                padding: 14px 25px;
+                border-radius: 25px;
+                cursor: pointer;
+                background: #7237BD;
+                color: white;
+                transition: 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                &:hover{
+                    color: #000;
+                    background: white;
+                }
+            }
+        }
+    }
+
+    &_main{
+        padding: 10px 0;
+        @include flex_col(2rem);
+        padding-left: 20px;
+        @include media("<tablet"){
+            padding-left: 20px;
+            
+        }
+        .top{
+            @include flex(space-around, null, null, null);
+            @include media("<tablet"){
+                flex-direction: column;
+                gap: 2.5rem;
+                
+            }
+            padding-top: 3rem;
+            .grp-one{
+                @include flex_col(1.7rem);
+                // background: red;
+                // width: 80%;
+                @include media("<tablet"){
+                     width: 80%;
+                    
+                }
+                .btn{
+                    @include media("<tablet"){
+                        position: relative;
+                        right: 5px;
+                        
+                    }
+                    padding-right: 20px;
+                    button{
+                        padding: 10px 25px;
+                        border-radius: 25px;
+                        background-color: transparent;
+                        border: 2px solid $global-color-list;
+                        color: white;
+                        text-transform: uppercase;
+                        font-size: 0.9rem
+                    }
+                }
+                .loc{
+                    @include flex_col(1.3rem);
+                    h3{
+                        font-size: 1rem;
+                        text-transform: capitalize;
+                        border-bottom: 2px solid #7237BD;
+                        width: 100px;
+                        padding-bottom: 10px;
+                        font-weight: 600;
+                    }
+                    ul{
+                        @include flex_col(1rem);
+                        li{
+                            font-size: 0.9rem;
+                            color: #fff;
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+
+            .left{
+                @include flex(null, null, null, 4rem);
+                @include media("<tablet"){
+                    flex-direction: column;
+                    gap: 0.5rem;
+                }
+            }
+
+            .right{
+                
+                .loc{
+                    h3{
+                        font-size: 0.9rem;
+                        width: 150px;
+                    }
+                }
+            }
+        }
+
+        .bottom{
+            @include flex(space-around , center,null, 1rem );
+            @include media("<phone-medium"){
+             flex-direction: column;
+             align-items: start;
+             justify-content: unset;
+             position: relative;
+             right: 20px;
+            //  width: 90%;
+            }
+            .second{
+                .first{
+                    .img{
+                        img{
+                            height: 100px;
+                        }
+                    }
+                }
+                p{
+                    font-size: 0.85rem;
+                    @include media("<phone-medium"){
+                        font-size: 0.65rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+

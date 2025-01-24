@@ -1,0 +1,115 @@
+
+
+.edit{
+    
+    .home-intro_main{
+        .left{
+            
+            h1{
+                font-size: 4rem;
+                &:first-child{
+                    color:#7237BD;
+                }
+                font-size: fluid(35, 72);
+                line-height: fluid(44, 78);
+            }
+        } 
+
+     
+
+       
+    }
+   
+   .bg{
+
+    .fixed-bg{
+        height: 100vh;
+        padding-top: 3rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        
+        @include media("<phone-medium"){
+            background-position: 50%;
+            background-attachment: scroll;
+            position: relative;
+            
+            .back{
+                display: none;
+            }
+            .back{
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 100%;
+                background-color: #000000b0;
+                top: 0;
+            }
+        }
+        
+        .content{
+           position: absolute;
+           width: 100%;
+           top: 20%;
+           @include media("<phone-medium"){
+            position: absolute
+
+          }
+
+           @include flex_col(2rem);
+
+           h2{
+            font-size: fluid(35, 72);
+            font-weight: 600;
+           }
+           p{
+            width: 35%;
+            line-height: 1.4rem;
+            @include media("<tablet"){
+                width: 50%;
+            }
+            @include media("<phone-medium"){
+                width: 80%;
+            }
+        }
+        }
+    }
+
+   
+    }
+
+
+    .second{
+      .left{
+        
+        .img{
+            height: 100%;
+            width: 100%;
+            img{
+                height: inherit;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+      }
+    }
+
+   .pricing {
+    
+    .pricing_main{
+        .btn{
+            button{
+                &.active{
+                    background-color: $price-yellow;
+                    color: #fff;
+                   
+                }
+            }
+        }
+
+  
+    }
+
+   }
+
+}

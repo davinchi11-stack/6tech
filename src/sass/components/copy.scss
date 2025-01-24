@@ -1,0 +1,69 @@
+.copy{
+    .intro{
+
+        text-align: center;
+         width: 100%;
+    
+         .txt{
+            @include flex_col(3rem);
+            h1{
+                width: 60%;
+                margin: 0 auto;
+                 font-weight: 600;
+                 font-size: fluid(39, 72);
+                 line-height: fluid(44, 78);
+                 @include media("<tablet"){
+                    width: 90%;
+                 }
+            }
+    
+            p{
+                width: 50%;
+                margin: 0 auto;
+                font-size: fluid(16, 18);
+                line-height: fluid(22, 24);
+                @include media("<tablet"){
+                    width: 70%;
+                 }
+            }
+         }
+    }  
+
+    .choose_main{
+        padding-top: 5rem ;
+        padding-bottom: 3rem;
+        .left{
+            h1{
+                font-size: fluid(39, 72);
+                line-height: fluid(44, 78);
+            }
+        }
+
+        .right{
+            .box{
+                h2{
+                    color: $global-color-list;
+                }
+            }
+        }
+    }
+
+
+    .pricing {
+    
+        .pricing_main{
+            .btn{
+                button{
+                    &.active{
+                        background-color: $global-color-list;
+                        color: #fff;
+                       
+                    }
+                }
+            }
+    
+        }
+    
+       }
+    
+}

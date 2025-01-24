@@ -1,0 +1,110 @@
+
+
+
+.contact{
+    padding: 5rem 0;
+    position: relative;
+    color: #fff;
+    // height: 100vh;
+    &_main{
+        @include flex(space-between , null, null , 3rem);
+        @include media("<=tablet") {
+            flex-direction: column;
+        }
+        width: 100%;
+        .left{
+            width: 40%;
+            @include media("<tablet") {
+                width: 100%;
+            }
+            @include flex_col(2rem);
+            h1{
+                font-size: fluid(37, 72);
+                line-height: fluid(44, 78);
+            }
+            form{
+                @include flex_col(1rem);
+                @include media("<phone-medium") {
+                    gap: 2rem;
+                }
+                .top{
+                    // background-color: red;
+                    @include flex(space-between , center, null , 1rem);
+                    @include media("<=phone-medium") {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: unset;
+                        gap: 2rem;
+                        
+                    }
+                    input{
+                        width: 100%;
+                        padding: 10px 8px;
+                        font-family: $font;
+                        font-size: 1rem;
+                        text-transform: capitalize;
+                        background-color: transparent;
+                        color: #fff;
+                        border: none;
+                        outline: 0;
+                        border-bottom: 1px solid #fff;
+                        &::placeholder{
+                            color: #fff;
+                        }
+                        @include media("<phone-medium") {
+                            width: 100%;
+                        }
+                        &:focus{
+                            border-bottom: 1px solid $global-color-a2064a9;
+                            transition: 250ms  ease-in-out;
+
+                        }
+                       
+                    }
+                }
+
+                textarea{
+                    width: 100%;
+                    resize: none;
+                    height: 300px;
+                    padding: 10px 8px;
+                        font-family: $font;
+                        font-size: 1rem;
+                        text-transform: capitalize;
+                        background-color: transparent;
+                        color: #fff;
+                        border: none;
+                        outline: 0;
+                        border-bottom: 1px solid #fff;
+                        &:focus{
+                            border-bottom: 1px solid $global-color-a2064a9;
+                            transition: 250ms  ease-in-out;
+
+                        }
+                }
+                input[type="submit"]{
+                    padding: 13px;
+                    font-size: fluid(14, 16);
+                    font-family: $font;
+                    border-radius: 25px;
+                    outline: 0;
+                    border: 0;
+                    background: $global-color-a2064a9;
+                    color: #fff;
+                    cursor: pointer;
+                    transition: all 250ms ease-in-out;
+                   
+            }
+
+            }
+
+        }
+        .right{
+            width: 50%;
+            @include media("<tablet"){
+                width: 100%;
+            }
+            
+        }
+    }
+}

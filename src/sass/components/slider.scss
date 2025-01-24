@@ -1,0 +1,96 @@
+
+.swp{
+    position: relative;
+    .service-slider{
+        height: 100vh;
+        width: 100%;
+        @include media("<phone-medium"){
+            height: 80vh;
+        }
+      
+          
+        .img{
+           width: 100%; 
+           height: 100vh;
+           .backdrop{
+            height: 100vh;
+            width: 100%;
+            @include media("<phone-medium"){
+                height: 80vh;
+            }
+            position: absolute;
+            background: rgba($color: #000000, $alpha: 0.8);
+            z-index: 99;
+            }
+
+           img{
+            position: absolute;
+             width: 100%;
+             height: 100vh;
+             object-fit: cover;
+             @include media("<phone-medium"){
+                height: 80vh;
+            }
+           }
+        }
+
+        .text{
+            text-align: center;
+           position: relative;
+           height: 100vh;
+           @include media("<phone-medium"){
+            height: 80vh;
+        }
+           @include flex(center , center , null , 1.4rem);
+           flex-direction: column;
+           color: white;
+           z-index: 999;
+           @include media("<tablet"){
+            gap: 2rem;
+            
+           }
+
+           &_txt{
+             @include flex_col(1.4rem);
+             h3{
+                font-weight: 600;
+                font-size: fluid(30, 48) ;
+                width: 100%;
+                @include media("<phone-medium"){
+                    width: 80%;
+                    margin: 0 auto;
+                   }
+             }
+             p{
+                font-size: fluid(18, 26);
+                font-weight: 300;
+                @include media("<phone-medium"){
+                    width: 90%;
+                    margin: 0 auto;
+                   }
+                // @include media("<tablet"){
+                //     font-size: 1.4rem;
+                //     line-height: 1.7rem;
+                //     width: 90%;
+                //     margin: 0 auto;
+                    
+                // }
+             }
+
+           }
+
+           &_btn{
+
+            button{
+              
+                padding: 18px 35px;
+                font-size: fluid(17, 20);
+                @include media("<tablet"){
+                    padding: 12px 30px;
+                    
+                }
+            }
+           }
+        }
+    }
+}

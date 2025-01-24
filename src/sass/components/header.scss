@@ -1,0 +1,117 @@
+.header{
+    width: 100%;
+    position: sticky;
+    background-color: $bg_main;
+    top: 0;
+    z-index: 999;
+    
+}
+
+.header-main{
+    color: white;
+    padding: 20px 0px;
+    width: 100%;
+     nav{
+        
+        @include flex(null , center, null, 3rem);
+        @include media("<tablet"){
+            justify-content: space-between;
+            padding: 0px 15px;
+        }
+        .logo{  
+            position: relative;
+            z-index: 99;
+            padding-left: 20px;
+            @include media("<tablet"){
+                padding-left: unset;
+                 width: 100px;
+            }
+        }
+
+        .nav-list{
+            overflow-x: hidden;
+          position: relative;
+        padding: 10px 0;
+
+            &.show{
+                display: block;
+               
+                
+            }
+
+            @include media("<tablet"){
+                transition: 250ms ease-in-out;
+                display: none;
+                position: absolute;
+                height: 100vh;
+                width: 100%;
+                background: $bg_main;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                // right: 0;
+                padding-top: 20px;
+                @include media("<phone-medium"){
+                    padding-top: 20px;
+                }
+            }
+
+
+            ul{
+                
+                @include flex(space-between , center, null, 1.6rem);
+                @include media("<tablet"){
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 100%;
+                    gap: 2.5rem;
+                }
+                li{
+                    a{
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $global-color-cfa1f76;
+                        text-decoration: none;
+                        position: relative;
+                        @include media("<tablet"){
+                           font-size: 18px;
+                            
+                        }
+                        @include media("<desktop-small"){
+                            font-size: 14px;
+                             
+                         }
+                        &::after{
+                            position: absolute;
+                            content: "";
+                            background: $global-color-accent;
+                            height: 0.15rem;
+                            width: 0;
+                            left: 0;
+                            bottom: -10px;
+                            transition: 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+                        }
+
+                        &:hover:after{
+                            width: 100%;
+                        }
+
+                        &:hover{
+                            color: $global-color-list;
+                            transition: 250ms ease-in-out;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .mobile{
+            display: none;
+            @include media("<tablet"){
+                display: block;
+            }
+        }
+     }
+}

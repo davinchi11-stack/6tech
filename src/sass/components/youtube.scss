@@ -1,0 +1,337 @@
+
+
+.youtube{
+    @include flex_col(3rem);
+    padding: unset;
+    
+    .home-intro_main{
+        // padding: 4rem 0;
+        // background-color: green;
+        padding: 7rem 0;
+        .left{
+            
+            h1{
+                
+                &:first-child{
+                    color: $global-color-list;
+                }
+                font-size: fluid(37, 72);
+                line-height: fluid(44, 78);
+            }
+        }
+
+        .right{
+            width: 50%;
+            @include media("<tablet"){
+                width: 100%;
+            }
+            
+            .arrow{
+                height: 200px;
+                position: relative;
+                bottom: 20px;
+                width: 150px;
+                img{
+                    height: 100%;
+                }
+                display: none;
+            }
+        }
+    }
+
+    .we-one{
+        
+        color: white;
+        @include flex(center, center , null, 3rem);
+        // flex-direction: row-reverse;
+        @include media("<tablet"){
+            flex-direction: column;
+        }
+      
+        height: 100vh;
+        @include media("<tablet"){
+            height: unset;
+            min-height: 100vh;
+        }
+        
+        .left{
+            width: 50%;
+            @include media("<tablet"){
+                width: 100%;
+                height: 70vh;
+            }
+            height: 80%;
+            .img{
+              width: 90%;
+                height: 100%;
+                video{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 15px;
+                }
+            }
+        }
+
+        .right{
+           width: 50%;
+           @include media("<tablet"){
+            width: 100%;
+        }
+           align-self: center;
+            .right-main{
+                @include flex_col(2rem);
+                .intro{
+                    @include flex_col(2rem);
+                    @include media("<tablet"){
+                        width: 80%;
+                    }
+                    .txt{
+                        @include flex_col(1rem);
+                        h3{
+                            font-size: 1.2rem;
+                            text-transform: uppercase;
+                            color: #7237BD;
+                            letter-spacing: 1px;
+                        }
+                        h2{
+                            font-size: 2rem;
+                            line-height: 2.3rem;
+                        }
+                      
+                    }
+
+                    p{
+                        font-size: 0.93rem;
+                        line-height: 1.3rem;  
+                        @include media("<tablet"){
+                            font-size: 1rem;
+                            line-height: 1.5rem;  
+                        }  
+                    }
+                }
+
+                .btn{
+                    button{
+                        padding: 10px 24px;
+                        cursor: pointer;
+                        background: linear-gradient(to right ,#FD0988 ,#7237BD);
+                        text-transform: capitalize;
+                        color: white;
+                        border-radius: 6px;
+                        transition: 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                        &:hover{
+                            background: #7237BD;
+                        }
+                        @include media("<tablet"){
+                            font-size: 1rem;
+                        }
+                        @include media("<phone"){
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .pricing{
+        position: relative;
+        padding-top: 3rem;
+       
+
+        &_main{
+            @include flex_col(2rem);
+
+            .btn{
+                background-color: white;
+                margin: 0 auto;
+                @include flex(center , center , null, 1rem);
+                padding: 5px;
+                border-radius: 50px;
+                
+                
+                button{
+                    padding: 15px 32px;
+                    border-radius: 25px;
+                    font-size: 0.9rem;
+                    background: transparent;
+                    color: #000;
+                    background: 1px solid transparent;
+                    cursor: pointer;
+                    transition: all 250ms ease-in-out;
+                    &.active{
+                        background-color: #7237BD;
+                        color: #fff;
+                       
+                    }
+                }
+            }
+        }
+
+        .price{
+            padding-top: 4rem;
+           
+          
+            .pricing-main{
+                @include flex(center , null , null , 2rem);
+                @include media("<phone"){
+                  gap: 3rem;
+               }
+                @include media("<phone"){
+                    flex-direction: column;
+                }
+            //     &.annually{
+                    
+            //         .pricing-card{
+            //             // background: linear-gradient(140deg, #CECECE, #98FF98 50%, #D3D3D3);
+
+            //               &:last-child{
+            //                 // background: linear-gradient(145deg, #EAEAEA, #87CEEB 50%, #FFF5E1);
+
+            //               }
+                    
+            //     }
+
+            // }
+    
+                .pricing-card{
+                // background: linear-gradient(120deg, #C0C0C0, #F8F8FF 50%, #B0C4DE);
+                transition: all 250ms ease-in-out;
+                  color: #000;
+                  border-radius: 25px;
+                  @include media("<tablet"){
+                    width: 400px;
+                    margin: 0 auto;
+                }
+                @include media("<phone-medium"){
+                    width: 300px;
+                    // margin: 0 auto;
+                }
+                 
+                  &:last-child{
+                    // background: linear-gradient(135deg, #C0C0C0, #FAD6A5 50%, #DCDCDC);
+                     
+                    .card{
+
+                        .pre{
+                            .btn-top{
+                                button{
+                                    background: #FFC107;
+                                    &:hover{
+                                        background: #E0A800;
+                                        
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                  }
+                 .card{
+                    padding: 50px;
+                    @include flex_col(4rem);
+                     width: 400px;
+                    background-color: #fff;
+                    box-shadow: 0px 4px 6px #00000060;
+                    @include media("<tablet"){
+                        width: 300px;
+                    }
+                    .pre{ 
+                        @include flex_col(2rem);
+                        .txt{
+                            @include flex_col(1.5rem);
+                        }
+                        
+                        h3{
+                            font-size: 1.5rem;
+                        }
+                        h2{
+                            font-size: 1.7rem;
+                            font-weight: 900;
+                            span{
+                                font-size: 1rem;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .btn-top{
+                            width: 100%;
+                            margin: 0 auto;
+                            
+                            button{
+                                width: 100%;
+                                padding: 13px;
+                                border-radius: 6px;
+                                font-size: 0.87rem;
+                                text-transform: uppercase;
+                                cursor: pointer;
+                                background-color: #CE3439;
+                                color: #fff;
+                                font-weight: 600;
+                                transition: all 250ms ease-in-out;
+                                &:hover{
+                                    background-color: #B03034;
+                                }
+
+                                
+                            }
+                        }
+                    }
+
+                    .details{
+                        @include flex_col(1.5rem);
+                        
+                     
+                        .box{
+                            @include flex(space-between, center, null , 1rem);
+                            width: 100%;
+                            border-bottom: 1px solid #0000003b;
+                            padding-bottom: 14px;
+                            h2{
+                                font-size: 0.8rem;
+                                width: 65%;
+                                line-height: 1.4rem;
+                                font-weight: 600;
+                            }
+
+                            p{
+                                width: 30%;
+                              
+                                 font-size: 0.8rem;
+
+                                 
+                                 svg{
+                                    height: 20px;
+                                 fill: green;
+                                 &.x{
+                                    fill: red;
+                                 }
+                                 }
+                            }
+                        }
+                    }
+
+                    // .btn-plan{
+                    //     align-self: center;
+                    //     padding-top: 2rem;
+                    //    button{
+                    //     background: #7237BD;
+                    //     padding: 14px 43px;
+                    //     color: #fff;
+                    //     // border-radius: 25px;
+                    //     font-size: 0.9rem;
+                    //      cursor: pointer;
+                    //       transition: 250ms ease-in-out;
+                    //      &:hover{
+                    //         transform: scale(1.03);
+                    //         background: #FD0988;
+                    //      }
+                    //    }
+                    // }
+                 }
+                }
+            }
+        }
+    }
+}

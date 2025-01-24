@@ -1,0 +1,76 @@
+
+
+.choose{
+    position: relative;
+    color: white;
+    padding: unset;
+    padding: 3rem 0;
+   
+
+    &_main{
+        width: 100%;
+        position: relative;
+        padding: 4rem 0;
+        @include flex(space-between , null, null , 2rem);
+        @include media("<tablet"){
+            flex-direction: column;
+            justify-content: center;
+        }
+        .left{
+            width: 50%;
+            @include media("<tablet"){
+                width: 90%;
+                margin: 0 auto;
+            }
+      
+            h1{
+                font-weight: 600;
+                font-size: fluid(47, 72);
+                line-height: fluid(56, 78);
+                
+            }
+        }
+
+        .right{
+            width: 50%;
+            @include media("<tablet"){
+                width: 90%;
+                margin: 0 auto;
+            }
+            @include flex_col(2rem);
+            .box{
+                @include flex_col(1.6rem);
+                padding: 2rem 0;
+                border-bottom: 1px solid rgba(255,255, 255, 0.2);
+                h2{
+                   font-size: 1.2rem; 
+                   font-size: 600;
+                   color: #7237BD;
+                }
+
+                p{
+                    font-size: 1.02rem;
+                    line-height: 1.3rem;
+                    width: 80%;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+
+// .spacer {
+// 	width:100%;
+// 	height:50vh;
+// 	background:#ddd;
+// }
+
+
+
+
+
+
+
+

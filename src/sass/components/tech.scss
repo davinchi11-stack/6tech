@@ -1,0 +1,182 @@
+.tech{
+
+    .home-intro_main{
+        
+        .left{
+            @include media("<tablet"){
+                width: 100%;
+               }
+            h1{
+                font-size: fluid(37, 72);
+                line-height: fluid(44, 78);
+                &:first-child{
+                    color: $global-color-list;
+                }
+               
+            }
+        }
+    
+
+        .right{
+            width: 40%;
+            @include media("<tablet"){
+                width: 100%;
+            }
+            h3{
+                font-size: fluid(16, 18);
+                line-height: fluid(22, 24);
+
+            }
+        }
+        
+    }
+
+
+    // .intro-card{
+    //     // background-color: #fff;
+    //     color: white;
+    //     padding-top: 6rem;
+    //     color: $bg_main;
+    //     .main{
+    //         @include flex(space-between , null, null, 2rem);
+    //         .left{
+    //             width: 50%;
+    //             h2{
+    //                 font-size: 3.5rem;
+    //                 line-height: 4rem;
+    //                 // font-weight: 600;
+    //                 color: white;
+    //             }
+    //         }
+    
+    //         .right{
+    //             @include flex_col(3rem);
+    
+    //             .card{
+    //                 @include flex_col(1.3rem);
+                
+    //                 padding: 20px;
+    //                 border-radius: 10px;
+    //                 &:nth-child(2){
+    //                    .icon{
+    //                     background: $global-color-purple;
+    //                    }
+    //                 }
+    
+    //                 &:nth-child(3){
+    //                     .icon{
+    //                      background: $global-color-639e8dd;
+    //                     }
+    //                  }
+    
+    //                 .icon{
+    //                     background-color:  #DC143C ;
+    //                     &:nth-child(2){
+    //                         background: $global-color-639e8dd;
+    //                     }
+    //                     width: 50px;
+    //                     height: 50px;
+    //                     border-radius: 6px;
+    //                     padding: 2;
+    //                     @include flex(center, center, null, null);
+                        
+    //                     svg{
+    //                         fill: white;
+    //                     }
+    //                 }
+    //                 .txt{
+    //                     @include flex_col(1rem);
+    //                     color: white;
+    //                     h3{
+    //                       font-size: 1.7rem;
+    //                       p{
+    //                         font-size: 1rem;
+    //                         line-height: 2rem;
+    //                     }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    
+    .intro-card{
+        padding: 5rem 0;
+        color: #fff;
+        .main{
+            @include flex(space-between , null, null, 2rem);
+            @include media("<tablet"){
+                flex-direction: column;
+                gap: 4rem;
+             }
+            .left{
+                width: 60%;
+                h2{
+                    font-size: fluid(37, 72);
+                    line-height: fluid(54, 78);
+                    // font-weight: 600;
+                    // color: $bg_main;
+                }
+                @include media("<tablet"){
+                    width: 100%;
+                 }
+            }
+    
+            .right{
+                width: 40%;
+                @include flex_col(3rem);
+                
+                .card{
+                    @include flex_col(1.3rem);
+                
+                    // padding: 20px;
+                    border-radius: 10px;
+                    &:nth-child(2){
+                       .icon{
+                        background: $global-color-purple;
+                       }
+                    }
+    
+                    &:nth-child(3){
+                        .icon{
+                         background: $global-color-639e8dd;
+                        }
+                     }
+    
+                    .icon{
+                        background-color:  #DC143C ;
+                        &:nth-child(2){
+                            background: $global-color-639e8dd;
+                        }
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 6px;
+                        padding: 2;
+                        @include flex(center, center, null, null);
+                        svg{
+                            fill: white;
+                        }
+                    }
+                    .txt{
+                        @include flex_col(1rem);
+                        color: #fff;
+                        h3{
+                          font-size: 1.7rem;
+                          @include media("<phone-medium"){
+                            width: 90%;
+                            
+                          }
+                          
+                        }
+                        p{
+                            font-size: 1rem;
+                            line-height: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

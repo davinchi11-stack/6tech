@@ -1,0 +1,205 @@
+
+.why-chose{
+    position: relative;
+    color: #fff;
+    overflow-x: hidden;
+    .back-two{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+         .drip{
+            width: 100%;
+            background-color: #191c269f;
+            height: 100%;
+            position: absolute;
+         }
+        img{
+            width: 100%;
+        }
+     }
+
+    &_main{
+    
+
+     &_intro{
+        .back{
+            width: 85%;
+            position: absolute;
+            top: 40px;
+        }
+
+        .txt{
+            padding: 5rem 0;
+            text-align: center;
+            @include flex_col(2rem);
+            text-align: center;
+            h3{
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                color: $global-color-list;
+                letter-spacing: 1px;
+            }
+            h2{
+                font-size: 2.6rem;
+                line-height: 2.3rem;
+                width: 60%;
+                margin: 0 auto;
+                line-height: 2.6rem;
+                font-weight: 600;
+            }
+          
+        }
+
+
+
+      
+     }
+
+     &_info{
+        padding: 5rem 0px;
+
+        .main{
+            @include flex_col(10rem);
+            .tween{
+                @include flex(center, center , null , 2rem);
+
+                .card{
+                    width: 40%;
+                    height: 180px;
+                    @include flex(null, null , null , 1rem);
+                    background-color: $global-color-639e8dd;
+                    padding: 2rem ;
+                    border-radius: 10px;
+                    &:nth-child(2){
+                        height: 120px;
+                        align-self: self-start;
+                    }
+                
+                
+                    .txt{
+                        align-self: center;
+                        @include flex_col(0.6rem);
+                        h3{
+                            font-size: 1.2rem;
+                        }
+                        p{
+                            font-size: 0.95rem;
+                            line-height: 1.3rem;
+                            font-family: $font_two;
+                        }
+                    }
+                }
+            }
+            .bottom {
+                @include flex(center, center , null , 2rem);
+                .card{
+                    width: 40%;
+                    height: 140px;
+                    @include flex(null, null , null , 1rem);
+                    background-color: $global-color-639e8dd;
+                    padding: 2rem  ;
+                    border-radius: 10px;
+                    
+                
+                
+                    .txt{
+                        align-self: center;
+                        @include flex_col(0.6rem);
+                        h3{
+                            font-size: 1.2rem;
+                        }
+                        p{
+                            font-size: 0.95rem;
+                            line-height: 1.3rem;
+                            font-family: $font_two;
+                        }
+                    }
+                }
+            }
+        }
+     }
+
+     &_order{
+        z-index: 9;
+        position: relative;
+        @include flex(null, center, null,2rem);
+        padding-top: 5rem;
+
+        .left{
+            @include flex_col(2rem);
+            h3{
+                font-size: 1.1rem;
+                text-transform: uppercase;
+                color: $global-color-list;
+                letter-spacing: 1px;
+            }
+
+            h2{
+                width: 80%;
+                    font-size: 2.4rem;
+                    line-height: 2.3rem;
+                    line-height: 2.6rem;
+                    font-weight: 600;
+            }
+
+            p{
+                font-size: 0.85rem;
+                width: 93%;
+                line-height: 1.3rem;
+            }
+            .btn{
+                button{
+                    font-size: 0.95rem;
+                }
+            }
+        }
+
+        .right{
+            @include flex_col(2rem);
+            
+            .card{
+                border-radius: 10px;
+                background-color: transparent;
+                background-image: linear-gradient(180deg, $global-color-accent 0%, #ffffff00 100%);
+                 border: 1px solid rgba(255,255, 255, 0.2);
+                 @include flex(null , null, null, 1rem);
+                 padding: 1rem;
+                
+                .icon{
+                 
+                   align-self: self-start;
+                   .img{
+                    width: 75px;
+                    height: 75px;
+                    img{
+                        width: 90%;
+                        object-fit: contain;
+                    }
+                   }
+                }
+            
+            
+                .txt{
+                   padding-top: 2.5rem;
+                   @include flex_col(1rem);
+                   width: 100%;
+                   h3{
+                    font-size: 1.1rem;
+                   }
+                   p{
+                    font-size: 0.85rem;
+                    line-height: 1.4rem;
+                    font-family: $font_two;
+                   }
+                }
+            }
+        }
+
+       
+     }
+
+
+    }
+}

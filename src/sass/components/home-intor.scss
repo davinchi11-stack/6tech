@@ -1,0 +1,55 @@
+.home-intro{
+    position: relative;
+    width: 100%;
+    min-height: unset;
+    color: white;
+   
+    &_main{
+        @include flex(space-between, null , null, 5rem);
+        width: 100%;
+
+        @include media("<tablet"){
+            flex-direction: column;
+        }
+        .left{
+         width: 50%;
+            @include media("<tablet"){
+             width: 100%;
+            }
+
+            h1{
+                font-weight: 600;
+                font-size: fluid(37, 72);
+                line-height: fluid(44, 78);
+            }
+            .icon{
+                width: 50%;
+                padding-top: 2rem;
+                @include media("<tablet"){
+                    width: 90%;
+                }
+                
+            }
+        }
+
+        .right{
+            width: 50%;
+            @include flex_col(2rem);
+            @include media("<tablet"){
+                width: 100%;
+            }
+            h3{
+                font-size: fluid(16, 18);
+                line-height: fluid(22, 24);
+
+            }
+
+            .btn{
+               button{
+                 padding: 12px 23px;
+               }
+            }
+        }
+        
+    }
+}
