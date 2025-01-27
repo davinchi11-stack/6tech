@@ -5,10 +5,12 @@
     color: white;
     padding: unset;
     padding: 3rem 0;
-   
+    
 
     &_main{
         width: 100%;
+       ;
+        // height: 300vh;
         position: relative;
         padding: 4rem 0;
         @include flex(space-between , null, null , 2rem);
@@ -18,6 +20,7 @@
         }
         .left{
             width: 50%;
+            // height: 100vh;
             @include media("<tablet"){
                 width: 90%;
                 margin: 0 auto;
@@ -67,7 +70,7 @@
 
 // .spacer {
 // 	width:100%;
-// 	height:50vh;
+// 	height:10vh;
 // 	background:#ddd;
 // }
 

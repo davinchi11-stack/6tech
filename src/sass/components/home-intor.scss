@@ -1,15 +1,18 @@
 .home-intro{
     position: relative;
     width: 100%;
-    min-height: unset;
+    // min-height: unset;
     color: white;
    
     &_main{
         @include flex(space-between, null , null, 5rem);
         width: 100%;
+        min-height: 60vh;
 
         @include media("<tablet"){
             flex-direction: column;
+            //
+            justify-content: start;
         }
         .left{
          width: 50%;

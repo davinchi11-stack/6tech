@@ -1,21 +1,14 @@
 import { CheckCircle } from "@phosphor-icons/react";
-import { useState } from 'react'
 import audio from "../../assets/audio-1.jpg"
 import video from '../../assets/video-1.jpg'
-// import videoTwo from '../../assets/video-two.jpg'
-
-enum Time {
-    monthly = "Monthly",
-    annually = "Annually"
-}
-
-
-
+import { useContext } from 'react'
+import { priceContext } from '../../context/priceContext'
+import { Time } from '../../context/priceContext'
 
 
 
 export function Editing () {
-    const [time , setTime] = useState(Time.monthly)
+     const {time , setTime} = useContext<any>(priceContext)
     return (
         <section className="home-intro youtube edit">
             <div className="home-intro_main wrapper small">
@@ -239,6 +232,7 @@ export function Editing () {
                                          <h2> Turnaround time
                                          </h2>
                                          <p> 24hrs </p>
+                                         {/* <h2> </h2> */}
                                     </div>
                                     <div className="box">
                                          <h2> Revisions

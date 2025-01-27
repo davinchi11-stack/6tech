@@ -1,5 +1,5 @@
 import second from '../../assets/liza-summer.jpg'
-
+import vidProduction from "../../assets/ron-lach.jpg"
 export function  WeAre () {
       return (
         <section className="we">
@@ -7,7 +7,7 @@ export function  WeAre () {
            <div className="we-one wrapper small">
               <div className="left">
                 <div className="img">
-                <img data-animation="skew" src="https://6tech.media/wp-content/uploads/2024/10/male-videographer-edits-and-cuts-footage-and-sound-on-his-person-1.jpg" alt="" />
+                <img data-animation="skew" src={vidProduction} alt="" />
                 </div>
               </div>
               <div className="right">

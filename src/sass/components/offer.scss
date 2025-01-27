@@ -66,9 +66,11 @@
                         height: 400px;
                      }
                     
-                    background-color: transparent;
-                    background-image: linear-gradient(180deg, $global-color-accent 0%, #ffffff00 100%);
-                     border: 1px solid rgba(255,255, 255, 0.2);
+                    // background-color: transparent;
+                    // background-image: linear-gradient(180deg, $global-color-accent 0%, #ffffff00 100%);
+                     border: 1px solid rgba(255, 255, 255, 0.144);
+                     background: rgba(255, 255, 255, 0.103);
+                     backdrop-filter: blur(15px);
                      border-radius: 15px;
                     .icon{
                         height: 80px;

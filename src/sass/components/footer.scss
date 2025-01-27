@@ -75,14 +75,15 @@
                     @include flex_col(1.3rem);
                     h3{
                         font-size: 1rem;
-                        text-transform: capitalize;
+                        // text-transform: capitalize;
                         border-bottom: 2px solid #7237BD;
-                        width: 100px;
-                        padding-bottom: 10px;
+                        // width: 150px;
+                        padding-bottom: 14px;
                         font-weight: 600;
                     }
                     ul{
                         @include flex_col(1rem);
+                        display: none;
                         li{
                             font-size: 0.9rem;
                             color: #fff;

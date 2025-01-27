@@ -7,12 +7,12 @@ import { SocialBranding } from './components/Social/Social'
 import { CopyWrite } from './components/Copywrite/copywrite'
 import { Tech } from './components/Tech/tech'
 import { Contact } from './components/Contact/contact.'
+import { PriceContextData } from './context/priceContext'
 
 
 
 function App() {
 
-  
   
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,9 +31,10 @@ const router = createBrowserRouter(
 
 
   return (
-  
     <div className='main-wrapper'>
+      <PriceContextData> 
       <RouterProvider router={router}/> 
+      </PriceContextData>
     </div>
    
   )

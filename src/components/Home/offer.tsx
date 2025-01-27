@@ -1,4 +1,5 @@
-const bg = 'https://6tech.media/wp-content/uploads/slider/cache/554803a17dfc7c0119cbe49a6fc692f9/team-database-admins-analyzing-source-code-wall-screen-tv-comparing-errors-using-digital-tablet-busy-server-room-two-cloud-programers-debugging-algorithm-software-innovation-office-scaled.jpg'
+import bg from '../../assets/vid-template.jpg'
+
 export function Offer () {
     return (
         <div className="offer">

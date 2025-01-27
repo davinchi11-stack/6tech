@@ -1,14 +1,11 @@
 import {  CheckCircle, Code, DeviceMobile, XCircle,  } from "@phosphor-icons/react";
 import { LightbulbFilament, ShoppingCart } from "@phosphor-icons/react/dist/ssr";
-import { useState } from "react";
-
-enum Time {
-    monthly = "Monthly",
-    annually = "Annually"
-}
+import { useContext } from 'react'
+import { priceContext } from '../../context/priceContext'
+import { Time } from '../../context/priceContext'
 
 export function Tech () {
-    const [time , setTime] = useState(Time.monthly)
+     const {time , setTime} = useContext<any>(priceContext)
     return (
         <section className="home-intro youtube tech">
               <div className="home-intro_main wrapper small">

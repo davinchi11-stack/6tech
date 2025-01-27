@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 
 export function ServicSlider (props: any) {
-    const {image , head , typo} = props;
+    const {image , head , typo , path} = props;
+    const navigate = useNavigate()
     return (
         <div className="service-slider">
            
@@ -14,7 +16,7 @@ export function ServicSlider (props: any) {
                     <p data-animation="para">{typo}</p>
                     </div>
                     <div className="text_btn">
-                        <button data-animation="fade" className="discover">get started</button>
+                        <button onClick={()=> navigate(`${path}`)} data-animation="fade" className="discover">get started</button>
                     </div>
                 </div>    
              </div>

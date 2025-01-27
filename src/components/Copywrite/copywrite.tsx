@@ -1,12 +1,12 @@
 import { CheckCircle } from "@phosphor-icons/react/dist/icons/CheckCircle";
 import { useState } from "react";
+import { useContext } from 'react'
+import { priceContext } from '../../context/priceContext'
+import { Time } from '../../context/priceContext'
 
-enum Time {
-    monthly = "Monthly",
-    annually = "Annually" 
-}
 export function CopyWrite () {
-    const [time , setTime] = useState(Time.monthly)
+     const {time , setTime} = useContext<any>(priceContext);
+     
     return (
      <section className="home-intro youtube copy">     
           <div className="intro">

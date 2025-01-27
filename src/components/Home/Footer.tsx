@@ -22,9 +22,9 @@ export function Footer () {
                 </div>
                 <div className="txt">
                 <div className="loc">
-                     <h3>Lagos</h3>
+                     <h3>MaryLand, USA</h3>
                     <ul>
-                        <li>123 Broadway Street, Suite 16, New York, NY</li>
+                        
                     </ul>
                 </div>
                 
@@ -94,7 +94,7 @@ export function Footer () {
                 <div className="txt">
                 <div className="loc">
                      <h3>+1 333 209840</h3>
-                     <h3>info@ultimate.com</h3>
+                     <h3>Service@6tech.media</h3>
                      <ul>
                     {/* <li></li>
                     <li></li>

@@ -1,19 +1,13 @@
-// import icon from '../../assets/up-arrow.png'
 import { CheckCircle, XCircle } from '@phosphor-icons/react'
 import video from '../../assets/you-run-output-reduced.mp4'
-import { useState } from 'react'
-
-
-enum Time {
-    monthly = "Monthly",
-    annually = "Annually"
-}
-
+import { useContext } from 'react'
+import { priceContext } from '../../context/priceContext'
+import { Time } from '../../context/priceContext'
 
 
 export function YoutubeIndex () {
-    const [time , setTime] = useState(Time.monthly)
-   
+    
+   const {time , setTime} = useContext<any>(priceContext)
    
 
      return (
@@ -33,12 +27,7 @@ export function YoutubeIndex () {
                     <h3 data-animation="para">Harness the power of YouTube with expert channel automation and tailored management
                     services. </h3>
                     <h3 data-animation="para">We streamline your channel’s growth strategy, boosting engagement and reach</h3>
-                    <div className="btn">
-                        {/* <button className="main-discover">Get Started</button> */}
-                    </div>
-                    <div className="arrow">
-                {/* <img src={icon} alt="arrow" /> */}
-               </div>
+                 
                 </div>
                
             </div>

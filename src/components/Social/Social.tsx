@@ -2,17 +2,13 @@ import { Palette, XCircle } from "@phosphor-icons/react";
 import { ChartLineUp } from "@phosphor-icons/react/dist/icons/ChartLineUp";
 import { CheckCircle } from "@phosphor-icons/react/dist/icons/CheckCircle";
 import { CameraRotate } from "@phosphor-icons/react/dist/ssr/CameraRotate";
-import { useState } from "react";
-
-enum Time {
-    monthly = "Monthly",
-    annually = "Annually" 
-}
-
+import { useContext } from 'react'
+import { priceContext } from '../../context/priceContext'
+import { Time } from '../../context/priceContext'
 
 
 export function SocialBranding () {
-    const [time , setTime] = useState(Time.monthly)
+     const {time , setTime} = useContext<any>(priceContext)
     return (
         <section className="home-intro youtube social">
           

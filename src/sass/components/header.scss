@@ -71,12 +71,12 @@
                         color: $global-color-cfa1f76;
                         text-decoration: none;
                         position: relative;
-                        @include media("<tablet"){
-                           font-size: 19px;
+                        @include media("<=tablet"){
+                           font-size: 18px;
                             
                         }
-                        @include media("<desktop-small"){
-                            font-size: 18px;
+                        @include media("<=desktop-small"){
+                            font-size: 14px;
                              
                          }
                         &::after{
