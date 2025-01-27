@@ -1,5 +1,4 @@
 import { CheckCircle } from "@phosphor-icons/react/dist/icons/CheckCircle";
-import { useState } from "react";
 import { useContext } from 'react'
 import { priceContext } from '../../context/priceContext'
 import { Time } from '../../context/priceContext'
