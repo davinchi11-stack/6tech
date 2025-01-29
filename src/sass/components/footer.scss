@@ -114,7 +114,15 @@
                 @include media("<tablet"){
                     flex-direction: column;
                     gap: 0.5rem;
+                    // width: 150px;
                     
+                }
+                .txt{
+                    .loc{
+                        @include media("<tablet"){
+                            width: 150px;
+                        }
+                    }
                 }
             }
 
@@ -131,30 +139,33 @@
 
         .bottom{
             @include flex(space-around , center,null, 1rem );
-            @include media("<phone-medium"){
+            @include media("<tablet"){
              flex-direction: column;
-             align-items: start;
              justify-content: unset;
              position: relative;
              right: 20px;
-            //  width: 90%;
             }
-            .second{
+           
                 .first{
+                    @include media("<phone-medium"){
+                        align-self: self-start;
+                    }
                     .img{
                         img{
-                            height: 100px;
+                            height: 90px;
                         }
                     }
                 }
+              .second{
                 p{
                     font-size: 0.85rem;
                     @include media("<phone-medium"){
-                        font-size: 0.65rem;
+                        font-size: 0.75rem;
                         text-align: center;
                     }
                 }
-            }
+              }
+            
         }
     }
 }

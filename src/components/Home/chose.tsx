@@ -1,4 +1,3 @@
-import { useEffect } from "react"
 import gsap from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
@@ -6,44 +5,12 @@ gsap.registerPlugin(ScrollTrigger)
 
 export function Choose () {
 
-    // useEffect(() => {
-    //     // ScrollTrigger.create({
-    //     //     trigger: ".choose",
-    //     //     start:"top top",
-    //     //     end:"bottom bottom",
-    //     //     pin: ".choose_main .left",
-    //     //     scrub: true,
-    //     //     markers: true
-            
-    //     // })
-
-     
-    // }, [])
-
-    useEffect(()=> {
-   const pinnedElement = document.querySelector('.pinned-section') as HTMLElement;
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            pinnedElement.classList.add('active');
-          } else {
-            pinnedElement.classList.remove('active');
-          }
-        });
-      });
-
-      observer.observe(pinnedElement);
-      
-      console.log(pinnedElement);
-      
-    }, [])
 
     return (
         <section className="choose ">
           <div className="choose_main wrapper small">
-             <div className="left pinned-section">
-                <h1 data-animation="header">Why <br /> Choose us ?</h1>
+             <div className="left ">
+                <h1 >Why <br /> Choose us ?</h1>
                 <div className="arrow">
                 <img src="https://cdn.prod.website-files.com/667956764d8134f48e27354b/66796fe43dc4764e1710c495_arrow-p-500.png" alt="arrow" />
                </div>

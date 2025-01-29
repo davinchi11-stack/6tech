@@ -8,6 +8,8 @@ import { CopyWrite } from './components/Copywrite/copywrite'
 import { Tech } from './components/Tech/tech'
 import { Contact } from './components/Contact/contact.'
 import { PriceContextData } from './context/priceContext'
+import { ErrorFunction } from './components/404/404'
+import { QueryContainer } from './query/queryMutation'
 
 
 
@@ -16,15 +18,18 @@ function App() {
   
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Index/>} >
-      <Route index element={<Home/>}/>
-      <Route path='youtube' element={<YoutubeIndex/>} />
-      <Route path='editing' element={<Editing/>} />
-      <Route path='social-branding' element={<SocialBranding/>} />
-      <Route path='copy-writing' element={<CopyWrite/>} />
-      <Route path='tech' element={<Tech/>} />
-      <Route path='contact' element={<Contact/>} />
-    </Route>
+    <>
+    <Route path='/' element={<Index />}>
+      <Route index element={<Home />} />
+      <Route path='youtube' element={<YoutubeIndex />} />
+      <Route path='editing' element={<Editing />} />
+      <Route path='social-branding' element={<SocialBranding />} />
+      <Route path='copy-writing' element={<CopyWrite />} />
+      <Route path='tech' element={<Tech />} />
+      <Route path='contact' element={<Contact />} />
+     </Route>
+    <Route path='*' element={<ErrorFunction />} />
+    </>
   )
 
 )
@@ -32,9 +37,11 @@ const router = createBrowserRouter(
 
   return (
     <div className='main-wrapper'>
+      <QueryContainer> 
       <PriceContextData> 
       <RouterProvider router={router}/> 
       </PriceContextData>
+      </QueryContainer>
     </div>
    
   )

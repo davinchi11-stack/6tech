@@ -96,13 +96,9 @@ export function Footer () {
                      <h3>+1 333 209840</h3>
                      <h3>Service@6tech.media</h3>
                      <ul>
-                    {/* <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li> */}
+                  
                   </ul>
                 </div>
-                
                 </div>
               </div>
                 </div>
